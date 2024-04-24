@@ -1,5 +1,7 @@
 <h1>   # Content Analysis, topic modelling, keyword extractor  </h1>
 
+
+<pre>
 import nltk
 import pandas as pd
 import gensim
@@ -73,12 +75,13 @@ for idx, topic in enumerate(lda_model.show_topics(num_topics, formatted=False)):
     plt.xlabel("Terms")
     plt.ylabel("Weights")
     plt.show()
-
+</pre>
 
 
 
 <h1>  # Location analysis   </h1>
 
+<pre>
 !pip install pandas matplotlib seaborn
 
 import pandas as pd
@@ -140,3 +143,4 @@ plt.xlabel('Number of Mentions')
 plt.ylabel('Location')
 plt.title('Top Locations Mentioned in Tweets')
 plt.show()
+</pre>
